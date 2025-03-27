@@ -3,23 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portale Appunti</title>
+    <title>San Luigi Drive</title>
     <!-- Aggiungi la Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Inclusione di marked.js per renderizzare il Markdown -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #4CAF50;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+        .section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        .section a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.5rem;
+            text-align: center;
+            width: 200px;
+            margin: 1rem;
+        }
+        .section img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div id="content"></div>
+    <header>
+        <h1>📚 **Welcome to the San Luigi Drive** 🎓</h1>
+        <p>Accedi facilmente ai nostri appunti, esami e sbobine tramite Google Drive. Clicca sui link sottostanti per accedere alle cartelle.</p>
+    </header>
 
-    <script>
-        // Carica il contenuto del tuo file Markdown (modifica il percorso se necessario)
-        fetch("README.md")
-            .then(response => response.text())
-            .then(text => {
-                // Converte il Markdown in HTML
-                document.getElementById("content").innerHTML = marked.parse(text);
-            });
-    </script>
+    <main>
+        <h2>📝 Sezioni principali</h2>
+        <div class="section">
+            <!-- Exams Section -->
+            <a href="https://drive.google.com/drive/folders/1nLxWUeeu2ROCCrLfPt1iBiXluKvRKYzr?usp=sharing">
+                <img src="https://github.com/UniversiTo/sanluigi/blob/main/exams.png" alt="Icona Exams">
+                <p><strong>Exams</strong></p>
+            </a>
+
+            <!-- Notes Section -->
+            <a href="https://drive.google.com/drive/folders/1SanBvwN3mDbkVrPYLAPEvS58CaqI9x0w?usp=sharing">
+                <img src="https://github.com/UniversiTo/sanluigi/blob/main/notes.png" alt="Icona Notes">
+                <p><strong>Notes</strong></p>
+            </a>
+
+            <!-- Sbobine Section -->
+            <a href="https://drive.google.com/drive/folders/TUO_LINK_SBOBINE">
+                <img src="https://github.com/UniversiTo/sanluigi/blob/main/sbobine.png" alt="Icona Sbobine">
+                <p><strong>Sbobine</strong></p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 San Luigi Drive. Tutti i diritti riservati.</p>
+    </footer>
 </body>
 </html>
