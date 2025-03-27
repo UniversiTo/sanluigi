@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -35,10 +35,9 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #50307a; /* Colore del testo uniforme */
         }
         header {
-            display: flex;
+            display: flex; /* Allinea gli elementi orizzontalmente */
             justify-content: center;
             align-items: center;
             padding: 2rem;
@@ -46,9 +45,9 @@
             color: #50307a;
         }
         header img {
-            width: 100px;
+            width: 100px; /* Modifica la larghezza del logo */
             height: auto;
-            margin-right: 1rem;
+            margin-right: 1rem; /* Aggiungi spazio tra il logo e il testo */
         }
         h1 {
             font-size: 2.5rem;
@@ -57,7 +56,7 @@
             margin-top: 1rem;
             margin-left: 1rem;
             font-size: 2rem;
-            color: #50307a; /* Colore del testo dell'intestazione */
+            color: black;
         }
         .section {
             display: flex;
@@ -87,23 +86,18 @@
             bottom: 0;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* Spaziatura tra copyright e social */
             align-items: center;
-            padding: 1rem 2rem;
-            flex-wrap: wrap;
-        }
-        footer p {
-            flex: 1;
-            text-align: left;
+            padding: 0.5rem 2rem; /* Piccolo padding laterale */
         }
         .social-links {
             display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
+            gap: 1rem; /* Spazio tra le icone */
+            justify-content: center; /* Centra le icone */
+            width: 50%; /* Limita la larghezza per evitare che le icone escano */
         }
         .social-links a img {
-            width: 30px;
+            width: 30px; /* Modifica la dimensione delle icone */
             height: 30px;
         }
     </style>
@@ -151,13 +145,13 @@
         <p>&copy; UNIVERSI.TO All rights reserved.</p>
         <div class="social-links">
             <!-- Link ai social -->
-            <a href="https://linktr.ee/universito" target="_blank" title="Linktree">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Linktree_logo.svg" alt="Linktree">
+            <a href="https://linktr.ee/universito" target="_blank">
+                <img src="Linktree.svg" alt="Linktree">
             </a>
-            <a href="https://www.instagram.com/universi.to" target="_blank" title="Instagram">
+            <a href="https://www.instagram.com/universi.to" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
             </a>
-            <a href="https://www.facebook.com/UniversiTO.Centrali" target="_blank" title="Facebook">
+            <a href="https://www.facebook.com/UniversiTO.Centrali" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
             </a>
         </div>
