@@ -10,16 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Favicon con forzatura della cache -->
-    <link rel="icon" href="/favicon-32x32.png?v=1" type="image/png" sizes="32x32">
-    <link rel="icon" href="/favicon-96x96.png?v=1" type="image/png" sizes="96x96">
-    <link rel="icon" href="/favicon-192x192.png?v=1" type="image/png" sizes="192x192">
-    <link rel="apple-touch-icon" href="/apple-icon-180x180.png?v=1" sizes="180x180">
-    
-    <!-- Manifesto -->
+    <!-- Aggiungi il favicon e altre icone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-
-    <!-- Colori del sistema -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -32,10 +37,17 @@
             padding: 0;
         }
         header {
-            text-align: center;
+            display: flex; /* Allinea gli elementi orizzontalmente */
+            justify-content: center;
+            align-items: center;
             padding: 2rem;
             background-color: #AB2A9A;
             color: white;
+        }
+        header img {
+            width: 100px; /* Modifica la larghezza del logo */
+            height: auto;
+            margin-right: 1rem; /* Aggiungi spazio tra il logo e il testo */
         }
         h1 {
             font-size: 2.5rem;
@@ -78,8 +90,12 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the San Luigi Drive</h1>
-        <p>Easily access our notes, exams and slips via Google Drive. Click on the links below to access the folders.</p>
+        <!-- Aggiungi il logo qui -->
+        <img src="Logo UNIVERSI.TO definitivo.png" alt="Logo San Luigi Drive"> <!-- Usa il link del tuo logo -->
+        <div>
+            <h1>Welcome to the San Luigi Drive</h1>
+            <p>Easily access our notes, exams, and slips via Google Drive. Click on the links below to access the folders.</p>
+        </div>
     </header>
 
     <main>
@@ -103,7 +119,7 @@
                 <p><strong>Sbobine</strong></p>
             </a>
 
-             <!-- Graduation Section -->
+            <!-- Graduation Section -->
             <a href="https://drive.google.com/drive/folders/1_XqCt5UOKt3h1f6ZPGpevUyIPV_5_bqI?usp=sharing">
                 <img src="https://raw.githubusercontent.com/UniversiTo/sanluigi/main/graduation.png" alt="Icona Graduation">
                 <p><strong>Graduation</strong></p>
