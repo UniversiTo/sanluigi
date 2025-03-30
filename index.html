@@ -24,22 +24,27 @@
     <style>
         body {
             font-family: 'Roboto Condensed', sans-serif;
-            background-color: #f4f4f4;
+            background-image: url(sanlu.jpeg); /* Sostituisci con il percorso dell'immagine */
+            background-size: cover; /* L'immagine copre l'intero schermo */
+            background-position: center center; /* Posiziona l'immagine al centro */
+            background-attachment: fixed; /* Effetto parallax, l'immagine rimane fissa mentre scorre il contenuto */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
             margin: 0;
             padding: 0;
         }
+
         header {
-            display: flex; /* Allinea gli elementi orizzontalmente */
+            display: flex;
             justify-content: center;
             align-items: center;
             padding: 2rem;
-            background-color: #c0a3ff;
+            background-color: rgba(192, 163, 255, 0.8); /* Colore con trasparenza per un effetto più morbido */
             color: #50307a;
         }
         header img {
-            width: 100px; /* Modifica la larghezza del logo */
+            width: 100px;
             height: auto;
-            margin-right: 1rem; /* Aggiungi spazio tra il logo e il testo */
+            margin-right: 1rem;
         }
         h1 {
             font-size: 2.5rem;
@@ -59,7 +64,7 @@
         .intro {
             margin: 1rem 0;
             padding: 1rem;
-            background-color: #e0d4ff;
+            background-color: rgba(224, 212, 255, 0.8); /* Colore con trasparenza per l'introduzione */
             border-radius: 8px;
         }
         .section {
@@ -90,73 +95,24 @@
             bottom: 0;
             width: 100%;
             display: flex;
-            justify-content: space-between; /* Spaziatura tra copyright e social */
+            justify-content: space-between;
             align-items: center;
-            padding: 0.5rem 2rem; /* Piccolo padding laterale */
+            padding: 0.5rem 2rem;
         }
         .social-links {
             display: flex;
-            gap: 1rem; /* Spazio tra le icone */
-            justify-content: center; /* Centra le icone */
-            width: 50%; /* Limita la larghezza per evitare che le icone escano */
+            gap: 1rem;
+            justify-content: center;
+            width: 50%;
         }
         .social-links a img {
-            width: 30px; /* Modifica la dimensione delle icone */
+            width: 30px;
             height: 30px;
-        }
-
-        /* Aggiunta di media query per schermi piccoli */
-        @media (max-width: 768px) {
-            /* Allinea il contenuto dell'header verticalmente per schermi piccoli */
-            header {
-                flex-direction: column; /* Dispone gli elementi in colonna */
-                text-align: center; /* Centra il testo */
-            }
-
-            header img {
-                margin-right: 0; /* Rimuove lo spazio tra il logo e il testo */
-                margin-bottom: 1rem; /* Aggiungi spazio sotto il logo per distanziare il testo */
-            }
-
-            .section {
-                flex-direction: column; /* Dispone le voci della sezione in colonna */
-                align-items: center; /* Allinea gli elementi al centro */
-            }
-
-            .section a {
-                width: 100%; /* Fa sì che i link occupino tutta la larghezza disponibile */
-                text-align: center; /* Centra il testo sotto ogni immagine */
-            }
-
-            .social-links {
-                flex-direction: column; /* Dispone le icone social in colonna */
-                align-items: center; /* Centra le icone */
-            }
-
-            .social-links a img {
-                width: 40px; /* Aumenta la dimensione delle icone per dispositivi piccoli */
-                height: 40px;
-            }
-
-            .section img {
-                width: 60px; /* Riduci la dimensione delle icone */
-                height: 60px;
-                margin-bottom: 15px; /* Aggiungi più spazio sotto le immagini */
-            }
-
-            h1 {
-                font-size: 2rem; /* Riduci la dimensione del titolo su dispositivi mobili */
-            }
-
-            h2, h3 {
-                font-size: 1.5rem; /* Riduci la dimensione dei sottotitoli su dispositivi mobili */
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Aggiungi il logo qui -->
         <img src="Logo UNIVERSI.TO definitivo.png" alt="Logo San Luigi Drive">
         <div>
             <h1>Welcome to the San Luigi Drive</h1>
