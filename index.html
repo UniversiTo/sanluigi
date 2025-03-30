@@ -50,8 +50,6 @@
             font-size: 2rem;
             color: #19003b;
         }
-
-          }
         h3 {
             margin-top: 1rem;
             margin-left: 0;
@@ -105,6 +103,54 @@
         .social-links a img {
             width: 30px; /* Modifica la dimensione delle icone */
             height: 30px;
+        }
+
+        /* Aggiunta di media query per schermi piccoli */
+        @media (max-width: 768px) {
+            /* Allinea il contenuto dell'header verticalmente per schermi piccoli */
+            header {
+                flex-direction: column; /* Dispone gli elementi in colonna */
+                text-align: center; /* Centra il testo */
+            }
+
+            header img {
+                margin-right: 0; /* Rimuove lo spazio tra il logo e il testo */
+                margin-bottom: 1rem; /* Aggiungi spazio sotto il logo per distanziare il testo */
+            }
+
+            .section {
+                flex-direction: column; /* Dispone le voci della sezione in colonna */
+                align-items: center; /* Allinea gli elementi al centro */
+            }
+
+            .section a {
+                width: 100%; /* Fa sì che i link occupino tutta la larghezza disponibile */
+                text-align: center; /* Centra il testo sotto ogni immagine */
+            }
+
+            .social-links {
+                flex-direction: column; /* Dispone le icone social in colonna */
+                align-items: center; /* Centra le icone */
+            }
+
+            .social-links a img {
+                width: 40px; /* Aumenta la dimensione delle icone per dispositivi piccoli */
+                height: 40px;
+            }
+
+            .section img {
+                width: 60px; /* Riduci la dimensione delle icone */
+                height: 60px;
+                margin-bottom: 15px; /* Aggiungi più spazio sotto le immagini */
+            }
+
+            h1 {
+                font-size: 2rem; /* Riduci la dimensione del titolo su dispositivi mobili */
+            }
+
+            h2, h3 {
+                font-size: 1.5rem; /* Riduci la dimensione dei sottotitoli su dispositivi mobili */
+            }
         }
     </style>
 </head>
