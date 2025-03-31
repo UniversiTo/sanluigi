@@ -24,9 +24,13 @@
     <style>
         body {
             font-family: 'Roboto Condensed', sans-serif;
+            background-image: url('path/to/your-background-image.jpg'); /* Sostituisci con il percorso dell'immagine */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
-            background-color: white
         }
 
         header {
@@ -34,7 +38,7 @@
             justify-content: center;
             align-items: center;
             padding: 2rem;
-            background-color: rgba(192, 163, 255, 0.8); /* Colore con trasparenza per un effetto più morbido */
+            background-color: rgba(192, 163, 255, 0.8);
             color: #50307a;
         }
         header img {
@@ -60,7 +64,7 @@
         .intro {
             margin: 1rem 0;
             padding: 1rem;
-            background-color: rgba(224, 212, 255, 0.8); /* Colore con trasparenza per l'introduzione */
+            background-color: rgba(224, 212, 255, 0.8);
             border-radius: 8px;
         }
         .section {
@@ -105,6 +109,23 @@
             width: 30px;
             height: 30px;
         }
+
+        /* Media Query per dispositivi mobili */
+        @media only screen and (max-width: 768px) {
+            footer {
+                padding: 0.5rem;
+            }
+
+            .social-links {
+                width: 100%; /* Fai in modo che le icone occupino tutta la larghezza */
+                justify-content: space-around; /* Distribuisci uniformemente le icone */
+            }
+
+            .social-links a img {
+                width: 24px; /* Riduci la dimensione delle icone sui dispositivi mobili */
+                height: 24px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -116,7 +137,6 @@
     </header>
 
     <main>
-        <!-- Sezione Introduzione -->
         <div class="intro">
             <h3>Introduction</h3>
             <p>Welcome to the San Luigi Drive. This website is powered by your representatives from UNIVERSI.TO, and was created with the aim to help SanLu student in easily accessing study material. Click on the link below in order to access the corresponding drive folder. Remember to use your @edu.unito.it account, otherwise you will not be able to access.</p>
@@ -124,25 +144,21 @@
 
         <h2>Sections</h2>
         <div class="section">
-            <!-- Exams Section -->
             <a href="https://drive.google.com/drive/folders/1nLxWUeeu2ROCCrLfPt1iBiXluKvRKYzr?usp=sharing" target="_blank">
                 <img src="https://raw.githubusercontent.com/UniversiTo/sanluigi/main/exams.png" alt="Icona Exams">
                 <p><strong>Exams</strong></p>
             </a>
 
-            <!-- Notes Section -->
             <a href="https://drive.google.com/drive/folders/1SanBvwN3mDbkVrPYLAPEvS58CaqI9x0w?usp=sharing" target="_blank">
                 <img src="https://raw.githubusercontent.com/UniversiTo/sanluigi/main/notes.png" alt="Icona Notes">
                 <p><strong>Notes</strong></p>
             </a>
 
-            <!-- Sbobine Section -->
             <a href="https://drive.google.com/drive/folders/1SanBvwN3mDbkVrPYLAPEvS58CaqI9x0w?usp=sharing" target="_blank">
                 <img src="https://raw.githubusercontent.com/UniversiTo/sanluigi/main/sbobine.png" alt="Icona Sbobine">
                 <p><strong>Sbobine</strong></p>
             </a>
 
-            <!-- Graduation Section -->
             <a href="https://drive.google.com/drive/folders/1_XqCt5UOKt3h1f6ZPGpevUyIPV_5_bqI?usp=sharing" target="_blank">
                 <img src="https://raw.githubusercontent.com/UniversiTo/sanluigi/main/graduation.png" alt="Icona Graduation">
                 <p><strong>Graduation</strong></p>
@@ -153,7 +169,6 @@
     <footer>
         <p>&copy; UNIVERSI.TO All rights reserved.</p>
         <div class="social-links">
-            <!-- Link ai social -->
             <a href="https://linktr.ee/universito" target="_blank">
                 <img src="Linktree.svg" alt="Linktree">
             </a>
